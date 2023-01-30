@@ -1,0 +1,39 @@
+/* Replace bullet list symbol with '-'. */
+.list-bullet:after {
+	height: 1.5px;
+	width: 7px;
+	margin-top: 3px;
+	margin-right: 4px;
+	border-radius: 0%;
+	margin-right: 8px;
+}
+
+/* Add margin before code block. */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+    margin-top: 10px !important;
+    margin: 0;
+    display: block;
+}
+
+/* Add margin after code block. */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+    margin-bottom: 8px !important;
+    margin: 0;
+    display: block;
+}
+
+/* Table header centered by default. */
+.markdown-rendered th {
+    text-align: center;
+}
+
+/* Padding before and after table. */
+table {
+    margin-top: 6px;
+    margin-bottom: 5px !important;
+}
+
+/* Use accent color for header 5. */
+.cm-header-5{ 
+    color: var(--color-accent);
+}
