@@ -1,11 +1,19 @@
+body {
+    --h1-size: 1.9em;
+    --h2-size: 1.62em;
+    --h3-size: 1.35em;
+    --h4-size: 1.1em;
+    --h5-size: 1.0em;
+}
+
 /* Replace bullet list symbol with '-'. */
 .list-bullet:after {
-	height: 1.5px;
-	width: 7px;
-	margin-top: 3px;
-	margin-right: 4px;
-	border-radius: 0%;
-	margin-right: 8px;
+    height: 1.5px;
+    width: 7px;
+    margin-top: 3px;
+    margin-right: 4px;
+    border-radius: 0%;
+    margin-right: 8px;
 }
 
 /* Add margin before code block. */
@@ -27,13 +35,22 @@
     text-align: center;
 }
 
-/* Padding before and after table. */
+/* Padding after table. */
 table {
-    margin-top: 6px;
     margin-bottom: 5px !important;
 }
 
-/* Use accent color for header 5. */
-.cm-header-5{ 
-    color: var(--color-accent);
+/* Add line after h1 and h2 */
+h1,
+h2,
+.markdown-rendered h1,
+.markdown-rendered h1,
+.HyperMD-header.HyperMD-header-1.cm-line,
+.HyperMD-header.HyperMD-header-2.cm-line{
+    border: none;
+    border-bottom: var(--hr-thickness) solid;
+    padding-bottom: 8px;
+    border-color: var(--hr-color);
 }
+
+/* cm-active HyperMD-header HyperMD-header-1 cm-line */
