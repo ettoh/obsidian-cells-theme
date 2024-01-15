@@ -44,7 +44,7 @@ table {
 h1,
 h2,
 .markdown-rendered h1,
-.markdown-rendered h1,
+.markdown-rendered h2,
 .HyperMD-header.HyperMD-header-1.cm-line,
 .HyperMD-header.HyperMD-header-2.cm-line{
     border: none;
@@ -53,4 +53,13 @@ h2,
     border-color: var(--hr-color);
 }
 
-/* cm-active HyperMD-header HyperMD-header-1 cm-line */
+/* monospace font for metadata and file path */
+.view-header-title-container,
+.mod-root .workspace-tab-header-inner,
+.metadata-content{
+    font-family: var(--font-monospace);
+}
+
+.metadata-container .metadata-add-button {
+    margin-top: 0.2em;
+}
