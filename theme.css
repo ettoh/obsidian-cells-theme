@@ -6,14 +6,19 @@ body {
     --h5-size: 1.0em;
 }
 
-/* Replace bullet list symbol with '-'. */
-.list-bullet:after {
-    height: 1.5px;
-    width: 7px;
-    margin-top: 3px;
-    margin-right: 4px;
-    border-radius: 0%;
-    margin-right: 8px;
+/* Replace bullet list symbol with dash symbol. */
+.callout-content ul>li::marker {
+    content: '\2013    ';
+}
+
+.list-bullet::after {
+    display: none;
+}
+
+.list-bullet::before {
+    content: "\2013 ";
+    margin-left: -0.3em;
+    color: var(--list-marker-color);
 }
 
 /* Add margin before code block. */
@@ -46,7 +51,7 @@ h2,
 .markdown-rendered h1,
 .markdown-rendered h2,
 .HyperMD-header.HyperMD-header-1.cm-line,
-.HyperMD-header.HyperMD-header-2.cm-line{
+.HyperMD-header.HyperMD-header-2.cm-line {
     border: none;
     border-bottom: var(--hr-thickness) solid;
     padding-bottom: 8px;
@@ -56,7 +61,7 @@ h2,
 /* monospace font for metadata and file path */
 .view-header-title-container,
 .mod-root .workspace-tab-header-inner,
-.metadata-content{
+.metadata-content {
     font-family: var(--font-monospace);
 }
 
